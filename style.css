@@ -102,11 +102,24 @@
 	font-size:1.3em;
 }
 
+.XstairsUp {
+	width:200px;
+	height:50px;
+	margin-bottom:25px;
+}
+
 .dungeonLevel {
 	width:200px;
 	height:200px;
 	background-color:black;
 
+}
+
+.XdungeonLevel {
+	width:192px;
+	height:192px;
+	background-color:white;
+	border:4px solid black;
 }
 
 .stairsDown {
@@ -132,6 +145,17 @@
 	padding-top:40px;
 }
 
+.XdungeonLevelText1 {
+	width:150px;
+	height:50px;
+	color:black;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:2.2em;
+	padding-top:40px;
+}
+
 .dungeonLevelText2 {
 	width:150px;
 	height:50px;
@@ -141,6 +165,21 @@
 	text-align:center;
 	font-size:4em;
 }
+
+.XdungeonLevelText2 {
+	width:150px;
+	height:50px;
+	color:black;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:4em;
+}
+
+
+
+
+
 
 
 
