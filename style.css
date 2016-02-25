@@ -1,0 +1,168 @@
+@import url('reset.css');
+
+
+
+
+.hide{
+	display:none;
+}
+
+.show{
+	display:block;
+}
+
+
+
+
+.button {
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+.wrapper {
+	height:700px;
+	width:650px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+}
+
+.title {
+	width:650px;
+	height:45px;
+	padding-top:5px;
+	font-size:2em;
+	text-align:center;
+}
+
+.subtitle {
+	width:650px;
+	height:45px;
+	padding-top:5px;
+	font-size:2em;
+	text-align:center;
+}
+
+.buffer{
+	width:650px;
+	height:15px;
+	padding-top:5px;
+	font-size:2em;
+	text-align:center;
+}
+
+.skillbox{
+	width:650px;
+	height:150px;
+}
+
+.gamescreen {
+	width:650px;
+	height:350px;
+	
+}
+
+
+
+
+.yourside {
+	height:350px;
+	width:225px;
+	float:left;
+}
+
+.dungeon {
+	height:350px;
+	width:200px;
+	float:left;
+}
+
+.theirside {
+	height:350px;
+	width:225px;
+	float:left;
+}
+
+
+
+
+.stairsUp {
+	width:200px;
+	height:40px;
+	padding-top:10px;
+	background-color:black;
+	margin-bottom:25px;
+	color:white;
+	text-align:center;
+	font-size:1.3em;
+}
+
+.dungeonLevel {
+	width:200px;
+	height:200px;
+	background-color:black;
+
+}
+
+.stairsDown {
+	width:200px;
+	height:36px;
+	padding-top:14px;
+	background-color:black;
+	margin-top:25px;
+	color:white;
+	text-align:center;
+	font-size:1.3em
+}
+
+
+.dungeonLevelText1 {
+	width:150px;
+	height:50px;
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:2.2em;
+	padding-top:40px;
+}
+
+.dungeonLevelText2 {
+	width:150px;
+	height:50px;
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:4em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
