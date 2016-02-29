@@ -178,12 +178,10 @@ $(document).ready(function(){
 	$(document).on("click",".stairsDown",function(){
 		goDown(level);
 		maxLevelUpdate();
-		console.log(maxLevel);
 	});
 	
 	$(document).on("click",".stairsUp",function(){
 		goUp(level);
-		console.log(maxLevel);
 	});
 	
 	

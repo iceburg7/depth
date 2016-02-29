@@ -70,17 +70,40 @@
 
 
 
+
+
+
 .yourside {
 	height:350px;
 	width:225px;
 	float:left;
 }
 
-.dungeon {
-	height:350px;
-	width:200px;
+.you {
+	height:342px;
+	width:167px;
+	border:4px solid black;
 	float:left;
 }
+
+.yourHealthBox1 {
+	height:350px;
+	width:50px;
+	float:left;
+}
+
+.healthBubble {
+	width:18px;
+	height:18px;
+	border:1px solid black;
+	margin-left:15px;
+	margin-bottom:2px;
+	background-color:#a11;
+}
+
+
+
+
 
 .theirside {
 	height:350px;
@@ -89,6 +112,17 @@
 }
 
 
+
+
+
+
+
+
+.dungeon {
+	height:350px;
+	width:200px;
+	float:left;
+}
 
 
 .stairsUp {
