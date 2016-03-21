@@ -7,6 +7,7 @@ $(document).ready(function(){
 	var level = 1;
 	var maxLevel = 1;
 	var x = "placeholder";
+	var q //for updating max health
 	
 	
 	
@@ -23,16 +24,54 @@ $(document).ready(function(){
 		$(y).addClass("show");
 	}
 	
+	
+	var fill = function(y){
+		console.log("filling "+y);
+		$(y).removeClass("empty");
+		$(y).addClass("fill");
+	}
+	
+	var empty = function(y){
+		console.log("emptying "+y);
+		$(y).removeClass("fill");
+		$(y).addClass("empty");
+	}
+	
+	
+	var appear = function(y){
+		console.log("appearing "+y);
+		$(y).removeClass("disappear");
+		$(y).addClass("appear");
+	}
+	
+	var disappear = function(y){
+		console.log("disappearing "+y);
+		$(y).removeClass("appear");
+		$(y).addClass("disappear");
+	}
+	
+	
+	
+	
+	
+	
 	var setLevelText = function(y){
 		$(".dungeonLevelText2").empty();
 		$(".dungeonLevelText2").append(y);
 	}
 	
-	var maxLevelUpdate = function(y){
+	var maxLevelUpdate = function(){
 		if (maxLevel < level){
 			maxLevel = level;
+			
+			if ( maxLevel < 14 ){
+				q = ".yourHB" + (level - 1).toString()
+				appear(q);
+				fill(q);
+			}
 		}
 	}
+	
 	
 	
 	
@@ -95,6 +134,14 @@ $(document).ready(function(){
 			console.log("reached level 12.");
 			level = 12;
 			setLevelText("12");
+		}else if (level===12){
+			console.log("reached level 13.");
+			level = 13;
+			setLevelText("13");
+		}else if (level===13){
+			console.log("reached level 14.");
+			level = 14;
+			setLevelText("14");
 		}
 		
 		
@@ -158,6 +205,14 @@ $(document).ready(function(){
 			console.log("reached level 11.");
 			level = 11;
 			setLevelText("11");
+		}else if (level===13){
+			console.log("reached level 12.");
+			level = 12;
+			setLevelText("12");
+		}else if (level===14){
+			console.log("reached level 13.");
+			level = 13;
+			setLevelText("13");
 		}
 		
 		
@@ -178,6 +233,7 @@ $(document).ready(function(){
 	$(document).on("click",".stairsDown",function(){
 		goDown(level);
 		maxLevelUpdate();
+		maxHealthUpdate();
 	});
 	
 	$(document).on("click",".stairsUp",function(){
